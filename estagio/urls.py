@@ -5,5 +5,6 @@ from . import views
 
 app_name = 'estagio'
 urlpatterns = [
-    path('', views.index, name= 'index')
+    path('', views.index, name= 'index'),
+    path('vagas/', views.vagas, name='vagas')
 ]
