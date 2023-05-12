@@ -12,7 +12,7 @@ def vagas(request):
     }
     return render(request, 'estagio/vagas.html', context)
 
-def vagas(request):
+def secretaria(request):
     context = {
         'titulo':'Secretaria'
     }
