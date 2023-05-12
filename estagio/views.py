@@ -5,3 +5,9 @@ def index(request):
         'titulo':'Sistema de Estágio',
     }
     return render(request, 'estagio/index.html', context)
+
+def vagas(request):
+    context = {
+        'titulo':'Vagas de Estágio'
+    }
+    return render(request, 'estagio/vagas.html', context)
