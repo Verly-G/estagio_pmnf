@@ -33,9 +33,7 @@ class Aluno(models.Model):
     matricula = models.IntegerField(verbose_name= "matricula")
     data_incio = models.DateField(verbose_name= "data_inicio")
     data_fim = models.DateField(verbose_name="data_termino")
-    aluno_id_universidade = models.ForeignKey(Universidade, on_delete=models.RESTRICT)
     aluno_id_curso = models.ForeignKey(Curso, on_delete=models.RESTRICT)
-    aluno_id_secretaria = models.ForeignKey(Secretaria, on_delete=models.RESTRICT)
     aluno_id_supervisor = models.ForeignKey(Supervisor, on_delete=models.RESTRICT)
 
     def __str__(self):
